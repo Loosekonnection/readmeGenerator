@@ -1,7 +1,6 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Array of questions for user input
@@ -43,12 +42,12 @@ const prompts = () =>
     },
     {
         type: 'input',
-        message: 'If applicable, provide guidelines on how other developers can contribute to your project.',
+        message: 'Provide detail on how other developers can contribute to your project.',
         name: 'contributing'
     },
     {
         type: 'input',
-        message: 'If applicable, provide any tests written for your application and provide examples on how to run them.',
+        message: 'Provide detail on any tests written for your application and any examples on how to run the tests.',
         name: 'tests'
     },
     {
@@ -80,7 +79,7 @@ const prompts = () =>
     },
     {
         type: 'input',
-        message: "What is your GitHub username?",
+        message: 'What is your GitHub username?',
         name: 'username',
         validate: (answer) => {
             if (answer) {
@@ -92,7 +91,7 @@ const prompts = () =>
     },
     {
         type: 'input',
-        message: "What is your email address?",
+        message: 'What is your email address?',
         name: 'email',
         validate: (answer) => {
             if (answer) {
@@ -101,6 +100,16 @@ const prompts = () =>
                 return 'You need to enter a valid email address.'
             }
         }
+    },
+    {
+        type: 'input',
+        message: 'Enter a Copyright year',
+        name: 'copydate',
+    },
+    {
+        type: 'input',
+        message: 'Enter a Copyright message',
+        name: 'copymsg',
     }
 ]);
 
@@ -120,8 +129,7 @@ function init() {
     prompts().then((answers) => {
 
         writeToFile('README.md', answers);
-    });
-    
+    });   
 }
 
 init();
