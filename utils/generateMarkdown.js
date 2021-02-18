@@ -241,18 +241,6 @@ Email: ${data.email}
 
 `;
 
-// Copyright section
-if (data.copydate !== '' && data.copymsg !== '') {
-readmeContent =+
-    `
----
-
-<br>
----
-© ${data.copydate} - ${data.copymsg}
-`
-};
-
     return readmeContent;
 }
 

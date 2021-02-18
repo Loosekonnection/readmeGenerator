@@ -7,50 +7,52 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const prompts = () =>
     inquirer.prompt([
     {
+        name: 'title',
         type: 'input',
         message: 'Please enter the title of your project?',
-        name: 'title',
         validate: (answer) => {
             if (answer) {
-                return true
+                return true;
             } else {
-                return 'You need to enter a valid project title.'
+                return 'You need to enter a valid project title.';
             }
         }
     },
     {
+        name: 'description',
         type: 'input',
         message: 'Please write a description of your project.',
-        name: 'description',
         validate: (answer) => {
             if (answer) {
-                return true
+                return true;
             } else {
-                return 'You need to enter a valid project description.'
+                return 'You need to enter a valid project description.';
             }
         }
     },
     {
+        name: 'installation',
         type: 'input',
         message: 'Please describe the install procedure of your project for the installation instructions.',
-        name: 'installation',
     },
     {
+        name: 'usage',
         type: 'input',
         message: 'Please describe how to use your project for the Usage section.',
-        name: 'usage'
     },
     {
+        
+        name: 'contributing',
         type: 'input',
         message: 'Provide detail on how other developers can contribute to your project.',
-        name: 'contributing'
     },
     {
+        name: 'tests',
         type: 'input',
         message: 'Provide detail on any tests written for your application and any examples on how to run the tests.',
-        name: 'tests'
     },
     {
+        name: 'license',
         type: 'list',
         message: 'Select the license that is associated with your project?',
         choices: [
@@ -68,49 +70,38 @@ const prompts = () =>
             'Mozilla Public License 2.0',
             'The Unlicense'
         ],
-        name: 'license',
         validate: (answer) => {
             if (answer) {
-                return true
+                return true;
             } else {
-                return 'Please enter a valid license type.'
+                return 'Please enter a valid license type.';
             }
         }
     },
     {
+        name: 'username',
         type: 'input',
         message: 'What is your GitHub username?',
-        name: 'username',
         validate: (answer) => {
             if (answer) {
-                return true
+                return true;
             } else {
-                return 'Please enter a valid GitHub username.'
+                return 'Please enter a valid GitHub username.';
             }
         }
     },
     {
+        name: 'email',
         type: 'input',
         message: 'What is your email address?',
-        name: 'email',
         validate: (answer) => {
             if (answer) {
-                return true
+                return true;
             } else {
-                return 'You need to enter a valid email address.'
+                return 'You need to enter a valid email address.';
             }
         }
     },
-    {
-        type: 'input',
-        message: 'Enter a Copyright year',
-        name: 'copydate',
-    },
-    {
-        type: 'input',
-        message: 'Enter a Copyright message',
-        name: 'copymsg',
-    }
 ]);
 
 // Function to write README file
@@ -119,7 +110,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log("README succesfully created.")
+        console.log('README.md succesfully created.');
     });
 }
 
