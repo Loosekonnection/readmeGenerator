@@ -93,10 +93,6 @@ function generateMarkdown(data) {
         toc += `
    * [Usage](#usage)` };
 
-    if (data.license !== '') {
-        toc += `    
-   * [License](#license)` };
-
     if (data.contributing !== '') {
         toc += `
    * [Contributing](#contributing)` };
@@ -104,6 +100,15 @@ function generateMarkdown(data) {
     if (data.tests !== '') {
         toc += `    
    * [Tests](#tests)` };
+
+   if (data.license !== '') {
+    toc += `    
+   * [License](#license)` };
+
+   if (data.username !== '') {
+       toc +=`
+   * [Questions](#questions)`
+   }
 
 
 // Generate markdown for the top required portions of the README
@@ -241,6 +246,21 @@ Email: ${data.email}
 
 `;
 
+// Copyright Section
+if (data.tests !== '') {
+
+    readmeContent +=
+        `
+---
+
+<br>
+---
+
+## Copyright
+
+© ${data.copydate} - ${data.copymsg}
+
+`};
     return readmeContent;
 }
 
