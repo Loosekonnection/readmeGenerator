@@ -14,7 +14,7 @@ This project automates the creation of a formatted README.md file via a series o
 ---
 
 <br>
----
+
 
 ## Table of Contents       
    * [Installation](#installation)
