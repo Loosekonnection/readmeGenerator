@@ -26,7 +26,6 @@ This project automates the creation of a formatted README.md file via a series o
 ---
 
 <br>
----
 
 ## Installation
 
@@ -38,7 +37,6 @@ You can either clone this repository to a local directory or you can fork this r
 ---
 
 <br>
----
 
 ## Usage 
 
@@ -50,7 +48,6 @@ Once the repository has been locally copied via either of the previous methods, 
 ---
 
 <br>
----
 
 ## Contributing
 
@@ -62,7 +59,6 @@ Contributing is welcome and easy. If you like the project and feel you would lik
 ---
 
 <br>
----
 
 ## Tests
 
@@ -74,7 +70,6 @@ The only test carried so far are to continous running of the ```node index.js```
 ---
 
 <br>
----
 
 ## License
 
@@ -86,7 +81,6 @@ MIT License - for more detail [Visit Site](https://opensource.org/licenses/MIT)
 ---
 
 <br>
----
 
 ## Questions?
 
@@ -100,7 +94,6 @@ Email: loosekonnection@gmail.com
 ---
 
 <br>
----
 
 ## Copyright
 
