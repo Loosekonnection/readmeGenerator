@@ -32,7 +32,7 @@ This project automates the creation of a formatted README.md file via a series o
 
 *How to install this project:*
 
-You can either clone this repository to a local directory or you can fork this repository from within GitHub. The *Usage* section also has a video that covers how to install the project as well as how to use.
+You can either clone this repository to a local directory or you can fork this repository from within GitHub. The *Usage* section also has a video that covers how to install the project as well as how to use it.
 
  
 ---
@@ -44,7 +44,7 @@ You can either clone this repository to a local directory or you can fork this r
 
 *How to use this project:*
 
-Once the repository has been locally copied via either of the previous methods, then from bash shell and within the working directory you will need to install the ```inquirer``` module. Then you will need to execute the following command ```node index.js```, from which you will be prompted for answers to a series of questions/prompts. after providing responses the README file will be created in the root of the readmeGenerator directory. <br> For a more detailed explanation please use the below link to view the video on how to do this: <br> [Demonstration Video](https://drive.google.com/file/d/19WjeDNL_luLmGA4Mq9ygJm5WOL_wu3j9/view?usp=sharing)
+Once the repository has been locally copied via either of the previous methods, then from bash shell and within the working directory you will need to install the ```inquirer``` module. Then you will need to execute the following command ```node index.js```, from which you will be prompted for answers to a series of questions/prompts. after providing responses the README file will be created in the root of the readmeGenerator directory. <br> For a more detailed explanation please use the below link to view the video on how to do this: <br><br> Click this link to access the video: [Demonstration Video](https://drive.google.com/file/d/19WjeDNL_luLmGA4Mq9ygJm5WOL_wu3j9/view?usp=sharing) <br> <br>![Demo gif](./demo/README_Generator_Demo.gif)
 
 
 ---
