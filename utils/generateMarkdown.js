@@ -128,7 +128,7 @@ ${renderLicenseBadge(data.license)}
 ---
 
 <br>
----
+
 `;
 
 // Add the Table of Contents
@@ -136,7 +136,7 @@ ${renderLicenseBadge(data.license)}
 
 `
 <br>
----
+
 `;
 
 
@@ -148,7 +148,6 @@ if (data.installation !== '') {
 ---
 
 <br>
----
 
 ## Installation
 
@@ -166,7 +165,6 @@ if (data.usage !== '') {
 ---
 
 <br>
----
 
 ## Usage 
 
@@ -184,7 +182,6 @@ if (data.contributing !== '') {
 ---
 
 <br>
----
 
 ## Contributing
 
@@ -202,7 +199,6 @@ if (data.tests !== '') {
 ---
 
 <br>
----
 
 ## Tests
 
@@ -218,7 +214,6 @@ readmeContent +=
 ---
 
 <br>
----
 
 ## License
 
@@ -234,7 +229,6 @@ readmeContent +=
 ---
 
 <br>
----
 
 ## Questions?
 
@@ -254,7 +248,6 @@ if (data.tests !== '') {
 ---
 
 <br>
----
 
 ## Copyright
 
